@@ -1,5 +1,6 @@
-@import 'tailwindcss';
-@import './nprogress.css';
+@import "tailwindcss";
+@import "./nprogress.css";
+@import "./excon.css";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -8,6 +9,43 @@
 @source '../js/Pages/**/*.svelte';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+@font-face {
+    font-family: "Cubano";
+    src: url("../fonts/Cubano.woff2") format("woff2"),
+        url("../fonts/Cubano.woff") format("woff"),
+        url("..fonts/Cubano.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Sofia Pro";
+    src: url("../fonts/Sofia-Pro-Black-Az.woff2") format("woff2"),
+        url("../fonts/Sofia-Pro-Black-Az.woff") format("woff"),
+        url("../fonts/Sofia-Pro-Black-Az.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+    }
+
+    body {
+        font-family: "Excon-Black", Verdana, sans-serif;
+        cursor: auto;
+    }
+
+    .font-sofia {
+        font-family: "Sofia Pro", Verdana, sans-serif;
+        text-transform: none;
+    }
 }
