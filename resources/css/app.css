@@ -34,6 +34,18 @@
 }
 
 @layer base {
+    :root {
+        --color-primary: #1e1a1f;
+        --color-secondary: #fb4141;
+        --color-edit: #e1a224;
+        --color-tertiary: #16c47f;        
+    }
+
+    ::selection {
+        background-color: var(--color-primary);
+        color: white;
+    }
+
     html {
         scroll-behavior: smooth;
         overflow-y: scroll;
@@ -47,5 +59,12 @@
     .font-sofia {
         font-family: "Sofia Pro", Verdana, sans-serif;
         text-transform: none;
+    }
+}
+
+@layer utilities {
+
+    .bg-primary{
+        background-color: var(--color-primary);
     }
 }
