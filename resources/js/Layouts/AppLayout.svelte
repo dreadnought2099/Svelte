@@ -1,14 +1,13 @@
 <script>
-    export let children = "";
+    import Navbar from "@/Components/Navbar.svelte";
 </script>
 
-<nav class="bg-gray-800 text-white p-4">
-    <a href="/" class="mr-4">Home</a>
-    <a href="/about" class="mr-4">About</a>
-</nav>
+<div class="min-h-screen bg-gray-100">
+    <Navbar />
 
-<div class="p-6">
-    {#if children}
-        {children}
-    {/if}
+    <main class="py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <slot />
+        </div>
+    </main>
 </div>
