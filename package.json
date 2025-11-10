@@ -18,6 +18,7 @@
         "vite": "^7.0.7"
     },
     "dependencies": {
-        "@inertiajs/svelte": "^2.2.15"
+        "@inertiajs/svelte": "^2.2.15",
+        "nprogress": "^0.2.0"
     }
 }
