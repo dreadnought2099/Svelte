@@ -23,7 +23,7 @@
                         href={route("home")}
                         class="text-white text-xl font-bold"
                     >
-                        <span class="text-secondary">Svelte</span>
+                        <span class="text-secondary hover-underline hover:scale-110 ease-in-out duration-200 transition-all">Svelte</span>
                     </Link>
                 </div>
 
@@ -31,7 +31,7 @@
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
                     <Link
                         href={route("home")}
-                        class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors
+                        class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-all
                             {isActive(route('home'))
                             ? 'border-secondary text-white'
                             : 'border-transparent text-gray-300 hover:border-secondary hover:text-white'}"
@@ -41,7 +41,7 @@
 
                     <Link
                         href={route("about")}
-                        class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors
+                        class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-all
                             {isActive(route('about'))
                             ? 'border-secondary text-white'
                             : 'border-transparent text-gray-300 hover:border-secondary hover:text-white'}"
@@ -51,7 +51,7 @@
 
                     <Link
                         href={route("services")}
-                        class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors
+                        class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-all
                             {isActive(route('services'))
                             ? 'border-secondary text-white'
                             : 'border-transparent text-gray-300 hover:border-secondary hover:text-white'}"
@@ -61,7 +61,7 @@
 
                     <Link
                         href={route("contact")}
-                        class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors
+                        class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-all
                             {isActive(route('contact'))
                             ? 'border-secondary text-white'
                             : 'border-transparent text-gray-300 hover:border-secondary hover:text-white'}"
@@ -82,7 +82,7 @@
                             href="/logout"
                             method="post"
                             as="button"
-                            class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+                            class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-all"
                         >
                             Logout
                         </Link>
@@ -91,13 +91,13 @@
                     <div class="flex items-center space-x-4">
                         <Link
                             href="/login"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all"
                         >
                             Login
                         </Link>
                         <Link
                             href="/register"
-                            class="bg-secondary text-white hover:bg-white hover:text-secondary border border-secondary px-4 py-2 rounded-md text-sm font-medium transition-colors"
+                            class="bg-secondary text-white hover:bg-white hover:text-secondary border border-secondary px-4 py-2 rounded-md text-sm font-medium transition-all"
                         >
                             Register
                         </Link>
