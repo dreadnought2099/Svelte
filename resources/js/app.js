@@ -4,6 +4,8 @@ import { mount } from "svelte";
 import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import NProgress from "nprogress";
 import { router } from "@inertiajs/svelte";
+import route from "@/utils/route";
+window.route = route;
 
 // disable spinner completely
 NProgress.configure({ showSpinner: false });

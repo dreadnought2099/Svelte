@@ -19,49 +19,52 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <Link href="/" class="text-white text-xl font-bold">
-                        MyApp
+                    <Link
+                        href={route("home")}
+                        class="text-white text-xl font-bold"
+                    >
+                        <span class="text-secondary">Svelte</span>
                     </Link>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
                     <Link
-                        href="/"
+                        href={route("home")}
                         class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors
-                            {isActive('/') && $page.url === '/'
-                            ? 'border-indigo-500 text-white'
-                            : 'border-transparent text-gray-300 hover:border-gray-300 hover:text-white'}"
+                            {isActive(route('home'))
+                            ? 'border-secondary text-white'
+                            : 'border-transparent text-gray-300 hover:border-secondary hover:text-white'}"
                     >
                         Home
                     </Link>
 
                     <Link
-                        href="/about"
+                        href={route("about")}
                         class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors
-                            {isActive('/about')
-                            ? 'border-indigo-500 text-white'
-                            : 'border-transparent text-gray-300 hover:border-gray-300 hover:text-white'}"
+                            {isActive(route('about'))
+                            ? 'border-secondary text-white'
+                            : 'border-transparent text-gray-300 hover:border-secondary hover:text-white'}"
                     >
                         About
                     </Link>
 
                     <Link
-                        href="/services"
+                        href={route("services")}
                         class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors
-                            {isActive('/services')
-                            ? 'border-indigo-500 text-white'
-                            : 'border-transparent text-gray-300 hover:border-gray-300 hover:text-white'}"
+                            {isActive(route('services'))
+                            ? 'border-secondary text-white'
+                            : 'border-transparent text-gray-300 hover:border-secondary hover:text-white'}"
                     >
                         Services
                     </Link>
 
                     <Link
-                        href="/contact"
+                        href={route("contact")}
                         class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors
-                            {isActive('/contact')
-                            ? 'border-indigo-500 text-white'
-                            : 'border-transparent text-gray-300 hover:border-gray-300 hover:text-white'}"
+                            {isActive(route('contact'))
+                            ? 'border-secondary text-white'
+                            : 'border-transparent text-gray-300 hover:border-secondary hover:text-white'}"
                     >
                         Contact
                     </Link>
@@ -94,7 +97,7 @@
                         </Link>
                         <Link
                             href="/register"
-                            class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+                            class="bg-secondary text-white hover:bg-white hover:text-secondary border border-secondary px-4 py-2 rounded-md text-sm font-medium transition-colors"
                         >
                             Register
                         </Link>
@@ -140,38 +143,38 @@
         <div class="sm:hidden">
             <div class="pt-2 pb-3 space-y-1">
                 <Link
-                    href="/"
+                    href={route("home")}
                     class="block pl-3 pr-4 py-2 border-l-4 text-base font-medium
-                        {isActive('/') && $page.url === '/'
-                        ? 'bg-gray-900 border-indigo-500 text-white'
-                        : 'border-transparent text-gray-300 hover:bg-gray-700 hover:border-gray-300 hover:text-white'}"
+                         {isActive(route('home'))
+                        ? 'border-secondary text-white'
+                        : 'border-transparent text-gray-300 hover:bg-gray-700 hover:border-secondary hover:text-white'}"
                 >
                     Home
                 </Link>
                 <Link
-                    href="/about"
+                    href={route("about")}
                     class="block pl-3 pr-4 py-2 border-l-4 text-base font-medium
-                        {isActive('/about')
-                        ? 'bg-gray-900 border-indigo-500 text-white'
-                        : 'border-transparent text-gray-300 hover:bg-gray-700 hover:border-gray-300 hover:text-white'}"
+                         {isActive(route('about'))
+                        ? 'border-secondary text-white'
+                        : 'border-transparent text-gray-300 hover:bg-gray-700 hover:border-secondary hover:text-white'}"
                 >
                     About
                 </Link>
                 <Link
-                    href="/services"
+                    href={route("services")}
                     class="block pl-3 pr-4 py-2 border-l-4 text-base font-medium
-                        {isActive('/services')
-                        ? 'bg-gray-900 border-indigo-500 text-white'
-                        : 'border-transparent text-gray-300 hover:bg-gray-700 hover:border-gray-300 hover:text-white'}"
+                         {isActive(route('services'))
+                        ? 'border-secondary text-white'
+                        : 'border-transparent text-gray-300 hover:bg-gray-700 hover:border-secondary hover:text-white'}"
                 >
                     Services
                 </Link>
                 <Link
-                    href="/contact"
+                    href={route("contact")}
                     class="block pl-3 pr-4 py-2 border-l-4 text-base font-medium
-                        {isActive('/contact')
-                        ? 'bg-gray-900 border-indigo-500 text-white'
-                        : 'border-transparent text-gray-300 hover:bg-gray-700 hover:border-gray-300 hover:text-white'}"
+                          {isActive(route('contact'))
+                        ? 'border-secondary text-white'
+                        : 'border-transparent text-gray-300 hover:bg-gray-700 hover:border-secondary hover:text-white'}"
                 >
                     Contact
                 </Link>

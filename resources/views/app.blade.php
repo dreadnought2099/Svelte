@@ -9,6 +9,7 @@
     <link rel="icon" href="{{ asset('icons/svelte-logo.png') }}">
     @vite(['resources/js/app.js', 'resources/css/app.css'])
     @inertiaHead
+    @routes
 </head>
 
 <body>
